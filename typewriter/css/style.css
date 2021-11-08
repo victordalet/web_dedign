@@ -1,0 +1,59 @@
+body
+{
+	color: #fff;
+	font-family: IMB Plex Mone, monospace;
+	background: #000;
+	padding: 50px;
+}
+.typewriter-contrainer
+{
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.typewriter
+{
+	font-size: 45px;
+	margin: 0 auto;
+	font-weight: lighter;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	animation: typing 3.5s steps(24); /*pour le nombre de char*/
+}
+
+.typewriter::after
+{
+	content: "";
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 1px;
+	background: #dadada;
+	right: 0;
+	top: 0;
+	animation :cursor 1s infinite;
+}
+
+@keyframes typing
+{
+	from{width: 0}
+	to{width: 100%;} 
+}
+
+@keyframes cursor
+{
+	0%
+	{
+		opacity: 1;
+	}
+	50%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
