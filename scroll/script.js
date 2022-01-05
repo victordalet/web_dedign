@@ -7,7 +7,7 @@ const flightPath = {
 		{x:500,y:100},
 		{x:750,y:-100},
 		{x:350,y:-50},
-		{x:600,x:100},
+		{x:600,y:100},
 		{x:800,y:0},
 		{x:window.innerWidth,y:-250}
 	]
@@ -30,6 +30,5 @@ const scene = new ScrollMagic.Scene({
 })
 
 .setTween(tween)
-.addIndicators()
 .setPin('.animation')
 .addTo(controller);
