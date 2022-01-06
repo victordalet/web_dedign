@@ -1,0 +1,30 @@
+*,::before,::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type : y mandatory;
+}
+
+.v-slider-bloc {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #333;
+  height: 100vh;
+  scroll-snap-align : center;
+}
+
+.v-slider-bloc:nth-child(1){background: #f0ee97;}
+.v-slider-bloc:nth-child(2){background: #f097aa;}
+.v-slider-bloc:nth-child(3){background: #97dbf0;}
+.v-slider-bloc:nth-child(4){background: #d797f0;}
