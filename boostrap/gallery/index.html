@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ekko -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <section id="galerie">
+
+        <div class="container">
+            <h2 class="text-center pt-5">Nos Projets</h2>
+            <p class="text-center pb-5">Nos Réalisations</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row mb-3">
+                        <a href="https://unsplash.it/1200/768.jpg?image=51" data-toggle="lightbox"
+                            data-gallery="example-gallery" class="col-sm-4">
+                            <img src="https://unsplash.it/600.jpg?image=51" alt="img 1" class="img-fluid">
+                        </a>
+                        <a href="https://unsplash.it/1200/768.jpg?image=52" data-toggle="lightbox"
+                            data-gallery="example-gallery" class="col-sm-4">
+                            <img src="https://unsplash.it/600.jpg?image=52" alt="img 2" class="img-fluid">
+                        </a>
+                        <a href="https://unsplash.it/1200/768.jpg?image=53" data-toggle="lightbox"
+                            data-gallery="example-gallery" class="col-sm-4">
+                            <img src="https://unsplash.it/600.jpg?image=53" alt="img 3" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="row mb-3">
+                        <a href="https://unsplash.it/1200/768.jpg?image=54" data-toggle="lightbox"
+                            data-gallery="example-gallery" class="col-sm-4">
+                            <img src="https://unsplash.it/600.jpg?image=54" alt="img 4" class="img-fluid">
+                        </a>
+                        <a href="https://unsplash.it/1200/768.jpg?image=55" data-toggle="lightbox"
+                            data-gallery="example-gallery" class="col-sm-4">
+                            <img src="https://unsplash.it/600.jpg?image=55" alt="img 5" class="img-fluid">
+                        </a>
+                        <a href="https://unsplash.it/1200/768.jpg?image=56" data-toggle="lightbox"
+                            data-gallery="example-gallery" class="col-sm-4">
+                            <img src="https://unsplash.it/600.jpg?image=56" alt="img 6" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Ekko -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+<script>
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event){
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    })
+
+</script>
+</body>
+
+</html>
