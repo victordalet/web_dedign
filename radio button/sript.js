@@ -4,7 +4,7 @@ function initSwitch() {
     return console.error(`Switch button ".switch" not exists!`)
   }
 
-  function toggleSwitch() {
+  function toggleSwitch() {cd 
     button.classList.toggle("switch--active")
     button.classList.toggle("switch--not-active")
   }
