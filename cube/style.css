@@ -8,7 +8,7 @@ body {
 	background: #111;
 }
 
-.cube {
+.cube,.cube2 {
 	margin: 200px auto 0;
 	width: 100px;
 	height: 100px;
@@ -16,7 +16,14 @@ body {
 	perspective: 4000px;
 	transform-style: preserve-3d;
 	transform: rotateX(-36deg) rotateY(-45deg);
+}
+
+.cube {
 	animation: spin 3s infinite cubic-bezier(0.16, 0.61, 0.49, 0.91);
+}
+
+.cube2 {
+	animation: spin2 3s infinite cubic-bezier(0.16, 0.61, 0.49, 0.91);
 }
 
 @keyframes spin {
@@ -27,6 +34,13 @@ body {
 	100% {
 		transform: rotateX(-36deg) rotateY(-405deg);
 	}
+}
+
+@keyframes spin2 {
+	33% {
+		transform: rotateX(-36deg) rotateY(-405deg);
+	}
+
 }
 
 .face {
