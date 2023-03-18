@@ -1,0 +1,70 @@
+:root {
+    --color-orange : linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
+    --color-orange-single : #feab2e;
+    --color-orange-single-dark : #dc4c11;
+    --color-blue   : #23232d;
+    --color-white  : #fff;
+    --color-black  : #000;
+    --color-black-2 : #23232d;
+    --color-red    : #C02215;
+    --width-captcha : 175px;
+}
+
+
+.container-msg-alert {
+    width: 500px;
+    height: 200px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px #222 , -2px -2px 20px #fff;
+    position: fixed;
+    top: calc(50% - 100px);
+    left: calc(50vw - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transform: translateY(-1000px) scale(0);
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--color-black-2);
+    font-size: 25px ;
+    text-align: center;
+}
+
+.container-msg-alert.active {
+    transform: translateY(0) scale(1);
+}
+
+
+.container-msg-alert:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: var(--color-orange);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.container-msg-alert:hover:before {
+     transform: scale(35);
+}
+
+
+.container-msg-alert i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+@media screen and (max-width : 1000px) {
+    .container-msg-alert.active {
+        transform: translateY(0) scale(.5);
+    }
+}
